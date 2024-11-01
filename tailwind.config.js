@@ -10,7 +10,12 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'oneColor': '#0088CC',
+        'twoColor': '#0A66C2'
       },
+      fontFamily:{
+        'hasti' : 'hasti'
+      }
     },
   },
   plugins: [],

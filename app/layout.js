@@ -1,3 +1,5 @@
+import './main.css'
+
 export const metadata = {
   title: "Mowj Arman 🌊",
   description: "created by abolfazl_j10",
