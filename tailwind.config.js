@@ -10,11 +10,14 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        'oneColor': '#0088CC',
-        'twoColor': '#0A66C2'
+        'lowBlue': '#0088CC',
+        'highBlue': '#0A66C2'
       },
       fontFamily:{
         'hasti' : 'hasti'
+      },
+      container:{
+        'center':true,
       }
     },
   },

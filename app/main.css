@@ -8,3 +8,15 @@
         src: url('./fonts/Hasti-Heavy.woff');
     }
 }
+body{
+    direction: rtl;
+}
+.positionNavbar{
+    @apply fixed top-7 w-full flex justify-center items-center px-32 font-hasti;
+}
+.navbar{
+    @apply flex justify-between z-50 text-2xl text-[#0088CC] bg-[#FFFFFF17] border border-[#0000000D] backdrop-blur w-full p-12 rounded-[100px];
+}
+.activeLink{
+    @apply text-highBlue;
+}
