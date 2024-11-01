@@ -20,3 +20,22 @@ body{
 .activeLink{
     @apply text-highBlue;
 }
+.screenOne{
+    @apply grid grid-cols-7 grid-rows-4 h-screen bg-gradient-to-b from-[#62CFF4] to-[#2C67F2] pb-[60px];
+}
+.containerMainContent{
+    @apply relative flex flex-col grid-rows-subgrid row-span-3 col-span-5;
+}
+.titleHeading{
+    @apply flex-1 flex flex-col justify-end font-hasti text-[130px] mx-auto;
+    line-height: 130px;
+}
+.containerTwoIcon{
+    @apply flex justify-between;
+}
+.spaceImageMain{
+    @apply absolute h-full w-full flex justify-center items-center;
+}
+.Image{
+    @apply border border-highBlue rounded-[100px] h-[550px] w-[430px] object-cover;
+}
