@@ -17,7 +17,7 @@ module.exports = {
         'hasti' : 'hasti'
       },
       container:{
-        'center':true,
+        center:true,
       }
     },
   },
