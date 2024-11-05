@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </div>
       <div className="thirdScreen">
-        <div className='flex mb-10'>
+        <div className='flex'>
           <img className='' src='./like.png' />
           <div className='connectMe'>ارتباط با من</div>
         </div>
@@ -64,8 +64,8 @@ export default function Home() {
             <div className='instagramLink -mt-10'>اینستاگرام</div>
           </div>
           <div className='containerLinks'>
-            <div className='text-[#0A66C2]'>لینکدین</div>
-            <div className='text-[#25D366] -mt-14'>واتسپ</div>
+            <div className='text-[#0A66C2] mr-32'>لینکدین</div>
+            <div className='text-[#25D366] -mt-10'>واتسپ</div>
             <div className='text-[#060606] mt-14'>ایکس</div>
           </div>
         </div>
