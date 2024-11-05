@@ -80,3 +80,15 @@ body{
     -webkit-background-clip:text;
     color: #ffffff00;
 }
+.likeIcon {
+    @apply w-[200px] h-[200px];
+}
+.connectMe{
+    @apply text-highBlue font-hasti text-[120px] mt-24 -mr-16;
+}
+.socialMediaLinks{
+    @apply flex flex-col flex-1 font-hasti text-[50px];
+}
+.containerLinks{
+    @apply flex-1 flex justify-around;
+}
