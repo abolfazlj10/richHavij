@@ -20,8 +20,11 @@ body{
 .activeLink{
     @apply text-highBlue;
 }
-.screenOne{
-    @apply grid grid-cols-7 grid-rows-4 h-screen bg-gradient-to-b from-[#62CFF4] to-[#2C67F2] pb-[60px];
+.oneScreen{
+    @apply flex flex-col h-screen bg-gradient-to-b from-[#62CFF4] to-[#2C67F2];
+}
+.gridSystemOneScreen{
+    @apply flex-1 grid grid-cols-7 grid-rows-4;
 }
 .containerMainContent{
     @apply relative flex flex-col grid-rows-subgrid row-span-3 col-span-5;
@@ -38,4 +41,10 @@ body{
 }
 .Image{
     @apply border border-highBlue rounded-[100px] h-[550px] w-[430px] object-cover;
+}
+.arrowDown{
+    @apply flex justify-center items-center py-2;
+}
+.arrowDown img{
+    @apply w-10;
 }
