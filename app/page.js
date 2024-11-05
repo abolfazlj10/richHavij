@@ -61,7 +61,7 @@ export default function Home() {
           <div className='flex-1 flex justify-around'>
             <div className='text-[#D44638] mt-14'>جیمیل</div>
             <div className='text-[#0088CC] mt-5'>تلگرام</div>
-            <div className='text-yellow-200 -mt-10'>اینستاگرام</div>
+            <div className='-mt-10 instagramLink'>اینستاگرام</div>
           </div>
           <div className='flex-1 flex justify-around pr-64'>
             <div className='text-[#0A66C2]'>لینکدین</div>

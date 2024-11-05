@@ -73,3 +73,10 @@ body{
 .thirdScreen{
     @apply flex flex-col h-screen bg-gradient-to-b from-[#2FB8DA] to-[#1479F7] pt-[120px] px-[150px];
 }
+.instagramLink{
+    background-image: url('../public/InstagramGradient.jpeg');
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color: #ffffff00;
+}
