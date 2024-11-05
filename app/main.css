@@ -55,3 +55,18 @@ body{
 .twoScreen{
     @apply grid gap-x-5 grid-cols-[4fr_1fr] grid-rows-[120px_1fr_1fr_50px] pr-[200px] h-screen bg-gradient-to-b from-[#49BBF4] to-[#2FB8DA];
 }
+.aboutTitle{
+    @apply flex items-center;
+}
+.fingerpring{
+    @apply h-[270px] opacity-75;
+}
+.nameAbout{
+    @apply font-hasti text-[128px] text-highBlue -mr-14;
+}
+.aboutText{
+    @apply font-vazir text-[#04336C] text-[28px];
+}
+.thingFrench{
+    @apply font-hasti text-[#2C67F2];
+}

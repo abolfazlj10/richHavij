@@ -33,16 +33,16 @@ export default function Home() {
 
       <div className="twoScreen">
         <div className='grid-cols-subgrid col-span-2'></div>
-        <div className='flex items-center'>
-          <img className='h-[270px] opacity-75' src='./fingerprint.svg' />
-          <div className='font-hasti text-[128px] text-highBlue -mr-14'>موج‌آرمان؟!</div>
+        <div className='aboutTitle'>
+          <img className='fingerprint' src='./fingerprint.svg' />
+          <div className='nameAbout'>موج‌آرمان؟!</div>
         </div>
         <div className='grid-cols-subgrid col-span-1'></div>
-        <div className='font-vazir text-[#04336C] text-[28px]'>
+        <div className='aboutText'>
           سلام! <br/>
           من مجتبی‌اَم؛ یه جَوونِ کنجکاو با هدف های بزرگ، همونی که هیچوقت نمره‌ی 20 کلاس رو نمی‌گرفته ولی وقتی صحبت از مسائل دیگه می‌شده مخی بوده واسه خودش! 
           19 سالمه و به‌تازگی پام به دانشگاه باز شده، زبان‌انگلیسی می‌خونم چون به‌نظرم کاربردیه. <br/>
-          دوستام بهم میگم <span className='font-hasti text-[#2C67F2]'>آچار فرانسه</span>، هرکاری ازم برمیاد و اگه بهم وظیفه‌ای بدی، اون کار روی زمین نمی‌مونه، و دقیقا واسه همینه که میتونی بهم اعتماد کنی! <br/>
+          دوستام بهم میگم <span className='thingFrench'>آچار فرانسه</span>، هرکاری ازم برمیاد و اگه بهم وظیفه‌ای بدی، اون کار روی زمین نمی‌مونه، و دقیقا واسه همینه که میتونی بهم اعتماد کنی! <br/>
           <b>پس بیا گپ بزنیم!</b>
         </div>
         <div>
