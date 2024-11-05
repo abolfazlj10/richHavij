@@ -34,7 +34,7 @@ export default function Home() {
       <div className="twoScreen">
         <div className='grid-cols-subgrid col-span-2'></div>
         <div className='flex items-center'>
-          <img className='h-[270px]' src='./fingerprint.svg' />
+          <img className='h-[270px] opacity-75' src='./fingerprint.svg' />
           <div className='font-hasti text-[128px] text-highBlue -mr-14'>موج‌آرمان؟!</div>
         </div>
         <div className='grid-cols-subgrid col-span-1'></div>
