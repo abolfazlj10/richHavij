@@ -14,7 +14,8 @@ module.exports = {
         'highBlue': '#0A66C2'
       },
       fontFamily:{
-        'hasti' : 'hasti'
+        'hasti' : 'hasti',
+        'vazir' : 'vazirMatn'
       },
       container:{
         center:true,
