@@ -52,7 +52,25 @@ export default function Home() {
           <img src='./ChevronsDown.svg' />
         </div>
       </div>
-      <div className="h-screen bg-lowBlue">خدا</div>
+      <div className="thirdScreen">
+        <div className='flex mb-10'>
+          <img className='w-[200px] h-[200px]' src='./like.png' />
+          <div className='text-highBlue font-hasti text-[120px] mt-24 -mr-16'>ارتباط با من</div>
+        </div>
+        <div className=' flex flex-col flex-1 font-hasti text-[50px]'>
+          <div className='flex-1 flex justify-around'>
+            <div className='text-[#D44638] mt-14'>جیمیل</div>
+            <div className='text-[#0088CC] mt-5'>تلگرام</div>
+            <div className='text-yellow-200 -mt-10'>اینستاگرام</div>
+          </div>
+          <div className='flex-1 flex justify-around pr-64'>
+            <div className='text-[#0A66C2]'>لینکدین</div>
+            <div className='text-[#25D366] -mt-14'>واتسپ</div>
+            <div className='text-[#060606] mt-14'>ایکس</div>
+          </div>
+        </div>
+        <div className='flex justify-center'><a href='https://mehdi-arman-s-project.vercel.app/'><img src='./desginer.svg'/></a></div>
+      </div>
     </>
   );
 }

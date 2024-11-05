@@ -70,3 +70,6 @@ body{
 .thingFrench{
     @apply font-hasti text-[#2C67F2];
 }
+.thirdScreen{
+    @apply flex flex-col h-screen bg-gradient-to-b from-[#2FB8DA] to-[#1479F7] pt-[120px] px-[150px];
+}
