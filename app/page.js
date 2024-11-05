@@ -52,7 +52,7 @@ export default function Home() {
           <img src='./ChevronsDown.svg' />
         </div>
       </div>
-      <div className="h-screen bg-lowBlue">screen 3</div>
+      <div className="h-screen bg-lowBlue">خدا</div>
     </>
   );
 }

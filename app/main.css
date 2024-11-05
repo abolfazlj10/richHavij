@@ -53,13 +53,13 @@ body{
     @apply w-10;
 }
 .twoScreen{
-    @apply grid gap-x-5 grid-cols-[4fr_1fr] grid-rows-[120px_1fr_1fr_50px] pr-[200px] h-screen bg-gradient-to-b from-[#49BBF4] to-[#2FB8DA];
+    @apply grid gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] pr-[200px] h-screen bg-gradient-to-b from-[#49BBF4] to-[#2FB8DA];
 }
 .aboutTitle{
     @apply flex items-center;
 }
-.fingerpring{
-    @apply h-[270px] opacity-75;
+.fingerprint{
+    @apply h-[280px] opacity-75;
 }
 .nameAbout{
     @apply font-hasti text-[128px] text-highBlue -mr-14;
