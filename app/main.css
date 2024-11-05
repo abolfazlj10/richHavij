@@ -12,8 +12,16 @@
         src: url('./fonts/Vazirmatn-Regular.ttf');
     }
 }
-body{
+html,body{
+    overflow: hidden;
+    height: 100vh;
     direction: rtl;
+}
+.parent{
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
 }
 .positionNavbar{
     @apply fixed z-50 top-7 w-full flex justify-center items-center font-hasti px-[200px];
@@ -26,7 +34,7 @@ body{
 }
 .oneScreen{
     background-image: url('../public/bgFreez.png') , linear-gradient(#62CFF4,#2C67F2);
-    @apply flex flex-col h-screen;
+    @apply relative flex flex-col h-screen snap-start;
 }
 .gridSystemOneScreen{
     @apply flex-1 grid grid-cols-7 grid-rows-4;
@@ -55,7 +63,7 @@ body{
 }
 .twoScreen{
     background-image: url('../public/bgFreez.png') , linear-gradient(#49BBF4,#2FB8DA);
-    @apply grid gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] pr-[200px] h-screen;
+    @apply grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] pr-[200px] h-screen snap-start;
 }
 .aboutTitle{
     @apply flex items-center;
@@ -74,7 +82,7 @@ body{
 }
 .thirdScreen{
     background-image: url('../public/bgFreez.png') , linear-gradient(#2FB8DA,#1479F7);
-    @apply flex flex-col h-screen pt-[120px] px-[150px];
+    @apply relative flex flex-col h-screen pt-[120px] px-[150px] snap-start;
 }
 .instagramLink{
     background-image: url('../public/InstagramGradient.jpeg');

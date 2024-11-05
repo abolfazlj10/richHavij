@@ -1,9 +1,9 @@
 import Navbar from './components/navbar'
 export default function Home() {
   return (
-    <>
+    <div className='parent'>
       <Navbar/>
-      <div className="oneScreen">
+      <div className="snap-start oneScreen">
 
         <div className="gridSystemOneScreen">
           <div className='grid-cols-subgrid col-span-7'></div>
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="twoScreen">
+      <div className="snap-start twoScreen">
         <div className='grid-cols-subgrid col-span-2'></div>
         <div className='aboutTitle'>
           <img className='fingerprint' src='./fingerprint.svg' />
@@ -52,7 +52,7 @@ export default function Home() {
           <img src='./ChevronsDown.svg' />
         </div>
       </div>
-      <div className="thirdScreen">
+      <div className="snap-start thirdScreen">
         <div className='flex'>
           <img className='' src='./like.png' />
           <div className='connectMe'>ارتباط با من</div>
@@ -69,6 +69,6 @@ export default function Home() {
         </div>
         <div className='flex justify-center'><a href='https://mehdi-arman-s-project.vercel.app/'><img src='./desginer.svg'/></a></div>
       </div>
-    </>
+    </div>
   );
 }
