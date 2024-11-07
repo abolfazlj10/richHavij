@@ -61,7 +61,7 @@ html,body{
     @apply absolute h-full w-full flex justify-center items-center;
 }
 .Image{
-    @apply border border-highBlue rounded-[100px] h-[550px] w-[430px] object-cover;
+    @apply backdrop-blur border bg-black/10 border-[#ababab78] rounded-[100px] h-[550px] w-[430px] object-cover;
 }
 .arrowDown{
     @apply flex justify-center items-center py-2;
