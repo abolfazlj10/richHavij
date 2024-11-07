@@ -12,6 +12,10 @@
         src: url('./fonts/Vazirmatn-Regular.ttf');
     }
 }
+*, html {
+    scroll-behavior: smooth !important;
+}
+
 html,body{
     overflow: hidden;
     height: 100vh;
@@ -22,6 +26,7 @@ html,body{
     height: 100vh;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 .positionNavbar{
     @apply fixed z-50 top-7 w-full flex justify-center items-center font-hasti px-[200px];
@@ -62,11 +67,14 @@ html,body{
     @apply w-10;
 }
 .twoScreen{
-    background-image: url('../public/bgFreez.png') , linear-gradient(#49BBF4,#2FB8DA);
-    @apply grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] pr-[200px] h-screen snap-start;
+    background-image: url('../public/bgFreez.png') , linear-gradient(#2C67F2,#2FB8DA);
+    @apply grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] h-screen snap-start;
+}
+.prCommonTwoScreen{
+    @apply pr-[200px];
 }
 .aboutTitle{
-    @apply flex items-center;
+    @apply flex items-center prCommonTwoScreen;
 }
 .fingerprint{
     @apply h-[280px] opacity-75;
@@ -75,7 +83,7 @@ html,body{
     @apply font-hasti text-[128px] text-highBlue -mr-14;
 }
 .aboutText{
-    @apply font-vazir text-[#04336C] text-[28px];
+    @apply font-vazir text-[#04336C] text-[28px] prCommonTwoScreen;
 }
 .thingFrench{
     @apply font-hasti text-[#2C67F2];
@@ -102,4 +110,10 @@ html,body{
 }
 .containerLinks{
     @apply flex-1 flex justify-around;
+}
+.navFingerprint{
+    @apply absolute top-0 w-full flex items-start justify-center;
+}
+.navFileFingerprint{
+    @apply w-12 ml-52 -mt-5;
 }

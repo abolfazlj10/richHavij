@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <div className='parent'>
       <Navbar/>
-      <div className="snap-start oneScreen">
+      <div className="oneScreen" tabIndex="1" id='home'>
 
         <div className="gridSystemOneScreen">
           <div className='grid-cols-subgrid col-span-7'></div>
@@ -27,11 +27,10 @@ export default function Home() {
         </div>
 
         <div className="arrowDown">
-          <img src='./ChevronsDown.svg' />
+          <a href='#about'><img src='./ChevronsDown.svg' /></a>
         </div>
       </div>
-
-      <div className="snap-start twoScreen">
+      <div className="twoScreen" tabIndex="2" id='about'>
         <div className='grid-cols-subgrid col-span-2'></div>
         <div className='aboutTitle'>
           <img className='fingerprint' src='./fingerprint.svg' />
@@ -48,11 +47,11 @@ export default function Home() {
         <div>
           <img src='./MowjSign.svg' />
         </div>
-        <div className="arrowDown">
-          <img src='./ChevronsDown.svg' />
+        <div className="arrowDown grid-cols-subgrid col-span-2">
+          <a href='#contact'><img src='./ChevronsDown.svg' /></a>
         </div>
       </div>
-      <div className="snap-start thirdScreen">
+      <div className="thirdScreen" tabIndex="3" id='contact'>
         <div className='flex'>
           <img className='' src='./like.png' />
           <div className='connectMe'>ارتباط با من</div>
