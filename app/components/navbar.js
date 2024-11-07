@@ -70,9 +70,9 @@ export default function Navbar () {
     return(
         <div className="positionNavbar">
             <div className="navbar">
-                <div><a className="activeLink" onClick={() => activeLink('home')} ref={home} href="#home">خـــــانه</a></div>
-                <div><a className="alaki" onClick={() => activeLink('about')} ref={about} href="#about">دربــــــــــــاره من</a></div>
-                <div><a className="alaki" onClick={() => activeLink('contact')} ref={contact} href="#contact">ارتبـــــــــاط با من</a></div>
+                <div><a className="linkNav activeLink" onClick={() => activeLink('home')} ref={home} href="#home">خـــــانه</a></div>
+                <div><a className="linkNav" onClick={() => activeLink('about')} ref={about} href="#about">دربــــــــــــاره من</a></div>
+                <div><a className="linkNav" onClick={() => activeLink('contact')} ref={contact} href="#contact">ارتبـــــــــاط با من</a></div>
                 <div className="navFingerprint">
                     <img className="navFileFingerprint" src="./fingerPrint.svg" />
                 </div>
