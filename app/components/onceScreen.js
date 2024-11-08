@@ -18,8 +18,8 @@ export default function OnceScreen () {
                         <div className='text-lowBlue'>آرمـــــــــان‌</div>
                     </div>
                     <div className='containerTwoIcon'>
-                        <img className="max-[1330px]:w-[150px]" src='./mowj-icon.png'/>
-                        <img className="max-[1330px]:w-[150px]" src='./mowj-icon.png'/>
+                        <img className="max-[1330px]:w-[150px]" src='./mowjicon.png'/>
+                        <img className="max-[1330px]:w-[150px]" src='./mowjicon.png'/>
                     </div>
                     <div className='spaceImageMain'>
                         <img className='Image' src='./mowj-bg.png'/>
@@ -32,7 +32,7 @@ export default function OnceScreen () {
             </div>
             <div className="containerMobileOnceScreen min-[750px]:hidden">
                 <div className="titleMobile">
-                    <img className="topIconMowjMobile" src="./mowj-icon.png" />
+                    <img className="topIconMowjMobile" src="./mowjicon.png" />
                     <div className="text-highBlue">مـــــوج</div>
                     <div className="text-lowBlue">آرمـــان‌</div>
                 </div>
