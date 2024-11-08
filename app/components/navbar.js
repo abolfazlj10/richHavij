@@ -89,14 +89,14 @@ export default function Navbar () {
                     <div><a className="linkNav" onClick={() => activeLink('about')} ref={about} href="#about">دربــــــــــــاره من</a></div>
                     <div><a className="linkNav" onClick={() => activeLink('contact')} ref={contact} href="#contact">ارتبـــــــــاط با من</a></div>
                     <div className="navFingerprint">
-                        <img className="navFileFingerprint" src="./fingerPrint.svg" />
+                        <img className="navFileFingerprint" src="./fingerprint.svg" />
                     </div>
                 </div>
             </div>
             <div className="positionNavbarMobile min-[750px]:hidden">
                 <div className="navbarMobile maxWidth">
                     <div><a className="linkNav activeLink" onClick={() => activeLink('homeMobile')} ref={homeMobile} href="#home">خـــانه</a></div>
-                    <a href="#about" onClick={fingerPrintLink} className="navFingerprint"><img className="navFileFingerprint" src="./fingerPrint.svg" /></a>
+                    <a href="#about" onClick={fingerPrintLink} className="navFingerprint"><img className="navFileFingerprint" src="./fingerprint.svg" /></a>
                     <div><a className="linkNav" onClick={() => activeLink('contactMobile')} ref={contactMobile} href="#contact">ارتباط با من</a></div>
                 </div>
             </div>

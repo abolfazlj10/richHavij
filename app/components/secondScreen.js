@@ -18,7 +18,7 @@ export default function SecondScreen () {
                 <img className="signMowj" src='./MowjSign.svg' />
             </div>
             <div className="arrowDown grid-cols-subgrid col-span-2 max-[750px]:hidden">
-                <a href='#contact'><img src='./ChevronsDown.svg' /></a>
+                <a href='#contact'><img src='./chevrons-down.svg' /></a>
             </div>
         </div>
     )

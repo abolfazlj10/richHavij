@@ -18,26 +18,26 @@ export default function OnceScreen () {
                         <div className='text-lowBlue'>آرمـــــــــان‌</div>
                     </div>
                     <div className='containerTwoIcon'>
-                        <img className="max-[1330px]:w-[150px]" src='./mowj-Icon.png'/>
-                        <img className="max-[1330px]:w-[150px]" src='./mowj-Icon.png'/>
+                        <img className="max-[1330px]:w-[150px]" src='./mowj-icon.png'/>
+                        <img className="max-[1330px]:w-[150px]" src='./mowj-icon.png'/>
                     </div>
                     <div className='spaceImageMain'>
-                        <img className='Image' src='./mowj-BG.png'/>
+                        <img className='Image' src='./mowj-bg.png'/>
                     </div>            
                 </div>
                 <div className='max-[1330px]:hidden grid-rows-subgrid col-span-1 row-span-3'></div>
             </div>
             <div className="arrowDown max-[750px]:hidden">
-                <a href='#about'><img src='./ChevronsDown.svg' /></a>
+                <a href='#about'><img src='./chevrons-down.svg' /></a>
             </div>
             <div className="containerMobileOnceScreen min-[750px]:hidden">
                 <div className="titleMobile">
-                    <img className="topIconMowjMobile" src="./mowj-Icon.png" />
+                    <img className="topIconMowjMobile" src="./mowj-icon.png" />
                     <div className="text-highBlue">مـــــوج</div>
                     <div className="text-lowBlue">آرمـــان‌</div>
                 </div>
                 <div className='spaceImageMainMobile'>
-                    <img className='ImageMobile' src='./mowj-BG.png'/>
+                    <img className='ImageMobile' src='./mowj-bg.png'/>
                 </div>     
             </div>
         </div>
