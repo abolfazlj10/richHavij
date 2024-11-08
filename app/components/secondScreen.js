@@ -1,12 +1,12 @@
 export default function SecondScreen () {
     return(
         <div className="twoScreen" tabIndex="2" id='about'>
-            <div className='grid-cols-subgrid col-span-2'></div>
+            <div className='max-[750px]:hidden grid-cols-subgrid col-span-2'></div>
             <div className='aboutTitle'>
                 <img className='fingerprint' src='./fingerprint.svg' />
                 <div className='nameAbout'>موج‌آرمان؟!</div>
             </div>
-            <div className='grid-cols-subgrid col-span-1'></div>
+            <div className='max-[750px]:hidden grid-cols-subgrid col-span-1'></div>
             <div className='aboutText'>
                 سلام! <br/>
                 من مجتبی‌اَم؛ یه جَوونِ کنجکاو با هدف های بزرگ، همونی که هیچوقت نمره‌ی 20 کلاس رو نمی‌گرفته ولی وقتی صحبت از مسائل دیگه می‌شده مخی بوده واسه خودش! 
@@ -15,9 +15,9 @@ export default function SecondScreen () {
                 <b>پس بیا گپ بزنیم!</b>
             </div>
             <div>
-                <img src='./MowjSign.svg' />
+                <img className="signMowj" src='./MowjSign.svg' />
             </div>
-            <div className="arrowDown grid-cols-subgrid col-span-2">
+            <div className="arrowDown grid-cols-subgrid col-span-2 max-[750px]:hidden">
                 <a href='#contact'><img src='./ChevronsDown.svg' /></a>
             </div>
         </div>

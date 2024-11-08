@@ -57,7 +57,7 @@ html,body{
     @apply text-highBlue;
 }
 .oneScreen{
-    background-image: url('../public/bgFreez.png') , linear-gradient(#62CFF4,#2C67F2);
+    background-image: url('../public/bgFreez.png') , linear-gradient(#62CFF4,#58A2FF);
     @apply relative flex flex-col h-screen snap-start;
 }
 .gridSystemOneScreen{
@@ -88,23 +88,26 @@ html,body{
     @apply w-10;
 }
 .twoScreen{
-    background-image: url('../public/bgFreez.png') , linear-gradient(#2C67F2,#2FB8DA);
-    @apply grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] h-screen snap-start;
+    background-image: url('../public/bgFreez.png') , linear-gradient(#58A2FF,#2FB8DA);
+    @apply overflow-hidden grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] h-screen snap-start;
+    @apply max-[750px]:gap-0 max-[750px]:block;
 }
 .prCommonTwoScreen{
-    @apply pr-[200px];
+    @apply min-[750px]:mr-[200px];
 }
 .aboutTitle{
-    @apply flex items-center prCommonTwoScreen;
+    @apply flex items-center prCommonTwoScreen max-[750px]:p-5;
 }
 .fingerprint{
-    @apply h-[280px] opacity-75;
+    @apply h-[280px] opacity-75 max-[600px]:h-[200px] max-[404px]:h-[190px] max-[380px]:h-[180px];
 }
 .nameAbout{
     @apply font-hasti text-[128px] text-highBlue -mr-14;
+    @apply max-[750px]:text-[90px] max-[600px]:text-[80px] max-[500px]:text-[70px] max-[448px]:text-[60px] max-[404px]:text-[55px] max-[380px]:text-[50px];
 }
 .aboutText{
-    @apply font-vazir text-[#04336C] text-[28px] prCommonTwoScreen;
+    @apply h-fit prCommonTwoScreen font-vazir text-[#04336C] text-[28px] border border-white/10 bg-[#0000001C] rounded-[40px] py-2 px-5 backdrop-blur;
+    @apply max-[750px]:mx-3;
 }
 .thingFrench{
     @apply font-hasti text-[#2C67F2];
@@ -150,6 +153,9 @@ html,body{
 }
 .ImageMobile{
     @apply w-[450px] h-[530px] object-cover rounded-[100px] border border-[#0A66C2] max-[465px]:w-[350px] max-[390px]:w-[320px];
+}
+.signMowj{
+    @apply max-[750px]:mr-auto max-[750px]:ml-9 max-[750px]:-mt-10 z-10 max-[750px]:relative max-[600px]:-mt-14 max-[750px]:w-[80px] max-[460px]:-mt-20;
 }
 @media (max-width:465px) {
     .titleMobile{
@@ -257,5 +263,190 @@ html,body{
 @media (min-width:750px) and (min-height:1041px) {
     .titleHeading{
         @apply mt-[300px] justify-center;
+    }
+}
+/* secondDcreen */
+@media (max-width:1584px) and (min-width:750px){
+    .prCommonTwoScreen{
+        @apply min-[750px]:mr-[100px];
+    }
+}
+@media (max-width:964px) and (min-width:750px){
+    .fingerprint{
+        @apply w-[200px];
+    }
+    .nameAbout{
+        @apply text-[120px];
+    }
+}
+@media (max-width:888px) and (min-width:750px){
+    .fingerprint{
+        @apply w-[180px];
+    }
+    .nameAbout{
+        @apply text-[100px];
+    }
+    .aboutText{
+        @apply text-[22px]
+    }
+}
+/* width mobile start */
+@media (max-width:500px){
+    .aboutText{
+        @apply text-[25px];
+        line-height: 50px;
+    }
+    .signMowj{
+        @apply -mt-20;
+    }
+}
+@media (max-width:480px){
+    .aboutText{
+        @apply text-[22px];
+        line-height: 45px;
+    }
+    .signMowj{
+        @apply -mt-14;
+    }
+}
+@media (max-width:404px){
+    .aboutText{
+        @apply text-[21px];
+        line-height: 43px;
+    }
+}
+@media (max-width:380px){
+    .aboutText{
+        @apply text-[21px];
+        line-height: 40px;
+    }
+}
+@media (max-width:364px){
+    .aboutText{
+        @apply text-[20px];
+        line-height: 39px;
+    }
+}
+/* width mobile end */
+/* height desktop */
+@media (min-width:750px) and (max-height:953px){
+    .fingerprint{
+        @apply h-[240px];
+    }
+}
+@media (min-width:750px) and (max-height:877px){
+    .fingerprint{
+        @apply h-[200px];
+    }
+    .nameAbout{
+        @apply text-[110px]
+    }
+    .aboutText{
+        @apply text-[24px];
+    }
+}
+@media (min-width:750px) and (max-height:799px){
+    .fingerprint{
+        @apply h-[190px];
+    }
+}
+@media (min-width:750px) and (max-height:799px){
+    .fingerprint{
+        @apply h-[180px];
+    }
+    .nameAbout{
+        @apply text-[80px]
+    }
+    .signMowj{
+        @apply w-[150px];
+    }
+}
+@media (min-width:750px) and (max-height:693px){
+    .aboutText{
+        @apply text-[22px]
+    }
+}
+@media (min-width:750px) and (max-height:693px){
+    .fingerprint{
+        @apply h-[150px];
+    }
+    .nameAbout{
+        @apply text-[70px]
+    }
+}
+@media (min-width:750px) and (max-height:589px){
+    .aboutText{
+        @apply text-[20px];
+    }
+}
+@media (min-width:750px) {
+    .twoScreen{
+        @apply min-h-[587px];
+    }
+}
+/* second screen height mobile from 750 until 500 */
+@media (max-width:750px) and (min-width:500px) and (max-height:975px) {
+    .aboutText{
+        @apply text-[24px];
+    }
+}
+@media (max-width:750px) and (min-width:500px) and (max-height:867px) {
+    .fingerprint{
+        @apply h-[200px];
+    }
+}
+@media (max-width:750px) and (min-width:500px) and (max-height:771px) {
+    .aboutText{
+        @apply text-[22px];
+    }
+}
+@media (max-width:750px) and (min-width:500px) and (max-height:683px) {
+    .nameAbout{
+        @apply text-[80px];
+    }
+    .fingerprint{
+        @apply h-[180px]
+    }
+    .aboutText{
+        @apply text-[20px]
+    }
+}
+@media (max-width:500px) and (max-height:1035px) {
+    .aboutText{
+        @apply text-[22px]
+    }
+}
+@media (max-width:500px) and (max-height:945px) {
+    .aboutText{
+        line-height: 40px;
+    }
+    .signMowj{
+        @apply -mt-10;
+    }
+}
+@media (max-width:500px) and (max-height:879px) {
+    .fingerprint{
+        @apply h-[150px];
+    }
+}
+@media (max-width:500px) and (max-height:815px) {
+    .aboutText{
+        @apply text-[20px];
+    }
+    .signMowj{
+        @apply -mt-16
+    }
+}
+@media (max-width:500px) and (max-height:729px) {
+    .aboutText{
+        line-height: 31px;
+    }
+}
+@media (max-width:500px) and (max-height:631px) {
+    .fingerprint{
+        @apply h-[130px];
+    }
+    .nameAbout{
+        @apply text-[70px]
     }
 }
