@@ -59,7 +59,7 @@ html,body{
     @apply text-highBlue;
 }
 .oneScreen{
-    background-image: url('../public/bgFreez.png') , linear-gradient(#62CFF4,#58A2FF);
+    background-image: url('../public/bg-freez.png') , linear-gradient(#62CFF4,#58A2FF);
     @apply relative flex flex-col h-screen snap-start;
     direction: rtl;
 }
@@ -91,7 +91,7 @@ html,body{
     @apply w-10;
 }
 .twoScreen{
-    background-image: url('../public/bgFreez.png') , linear-gradient(#58A2FF,#2FB8DA);
+    background-image: url('../public/bg-freez.png') , linear-gradient(#58A2FF,#2FB8DA);
     @apply overflow-hidden grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] h-screen snap-start;
     direction: rtl;
     @apply max-[750px]:gap-0 max-[750px]:block;
@@ -117,7 +117,7 @@ html,body{
     @apply font-hasti text-[#2C67F2];
 }
 .thirdScreen{
-    background-image: url('../public/bgFreez.png') , linear-gradient(#2FB8DA,#1479F7);
+    background-image: url('../public/bg-freez.png') , linear-gradient(#2FB8DA,#1479F7);
     @apply relative flex flex-col h-screen pt-[120px] px-[150px] snap-start;
     direction: rtl;
 }
