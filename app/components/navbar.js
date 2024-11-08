@@ -8,6 +8,8 @@ export default function Navbar () {
     const home = useRef(null)
     const about = useRef(null)
     const contact = useRef(null)
+    const homeMobile = useRef(null)
+    const contactMobile = useRef(null)
 
     // remove class from rest of a tag
     const removeClassName = (elem) => {
@@ -31,8 +33,17 @@ export default function Navbar () {
             contact.current.className += ' activeLink'
             removeClassName(home.current)
             removeClassName(about.current)
+        }else if(inp == 'homeMobile'){
+            homeMobile.current.className += ' activeLink'
+            removeClassName(contactMobile.current)
+        }else if(inp == 'contactMobile'){
+            contactMobile.current.className += ' activeLink'
+            removeClassName(homeMobile.current)
         }
-        
+    }
+    const fingerPrintLink = () => {
+        removeClassName(homeMobile.current)
+        removeClassName(contactMobile.current)
     }
 
     
@@ -44,12 +55,15 @@ export default function Navbar () {
                     switch (entry.target.id) {
                         case 'home':
                             activeLink('home');
+                            activeLink('homeMobile');
                             break;
                         case 'about':
                             activeLink('about');
+                            fingerPrintLink()
                             break;
                         case 'contact':
                             activeLink('contact');
+                            activeLink('contactMobile');
                             break;
                         default:
                             break;
@@ -81,9 +95,9 @@ export default function Navbar () {
             </div>
             <div className="positionNavbarMobile min-[750px]:hidden">
                 <div className="navbarMobile maxWidth">
-                    <div><a className="linkNav activeLink" onClick={() => activeLink('home')} ref={home} href="#home">خـــانه</a></div>
-                    <a href="#about" className="navFingerprint"><img className="navFileFingerprint" src="./fingerPrint.svg" /></a>
-                    <div><a className="linkNav" onClick={() => activeLink('contact')} ref={contact} href="#contact">ارتباط با من</a></div>
+                    <div><a className="linkNav activeLink" onClick={() => activeLink('homeMobile')} ref={homeMobile} href="#home">خـــانه</a></div>
+                    <a href="#about" onClick={fingerPrintLink} className="navFingerprint"><img className="navFileFingerprint" src="./fingerPrint.svg" /></a>
+                    <div><a className="linkNav" onClick={() => activeLink('contactMobile')} ref={contactMobile} href="#contact">ارتباط با من</a></div>
                 </div>
             </div>
         </>

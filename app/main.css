@@ -19,7 +19,7 @@
 html,body{
     overflow: hidden;
     height: 100vh;
-    direction: rtl;
+    direction: ltr;
 }
 .parent{
     overflow-y: scroll;
@@ -29,6 +29,7 @@ html,body{
     scroll-behavior: smooth;
 }
 .positionNavbar{
+    direction: rtl;
     @apply fixed z-50 top-7 w-full flex justify-center items-center font-hasti px-[100px];
     @apply max-[900px]:px-[50px];
 }
@@ -37,10 +38,11 @@ html,body{
     @apply max-[900px]:text-xl max-[900px]:p-9;
 }
 .positionNavbarMobile{
+    direction: rtl;
     @apply fixed z-50 bottom-7 w-full flex justify-center items-center font-hasti px-[10px];
 }
 .navbarMobile{
-    @apply w-full flex items-center justify-between text-2xl text-[#04336C] bg-[#FFFFFF17] border border-[#0000000D] backdrop-blur px-5 py-3 rounded-[100px];
+    @apply w-full flex items-center justify-between text-2xl text-[#04336C] bg-[#0000001C] border border-[#0000000D] backdrop-blur px-5 py-3 rounded-[100px];
 }
 .navFingerprint{
     @apply absolute top-0 w-full flex items-start justify-center;
@@ -59,6 +61,7 @@ html,body{
 .oneScreen{
     background-image: url('../public/bgFreez.png') , linear-gradient(#62CFF4,#58A2FF);
     @apply relative flex flex-col h-screen snap-start;
+    direction: rtl;
 }
 .gridSystemOneScreen{
     @apply flex-1 grid grid-cols-7 grid-rows-[100px_1fr_1fr_1fr];
@@ -90,6 +93,7 @@ html,body{
 .twoScreen{
     background-image: url('../public/bgFreez.png') , linear-gradient(#58A2FF,#2FB8DA);
     @apply overflow-hidden grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] h-screen snap-start;
+    direction: rtl;
     @apply max-[750px]:gap-0 max-[750px]:block;
 }
 .prCommonTwoScreen{
@@ -115,6 +119,7 @@ html,body{
 .thirdScreen{
     background-image: url('../public/bgFreez.png') , linear-gradient(#2FB8DA,#1479F7);
     @apply relative flex flex-col h-screen pt-[120px] px-[150px] snap-start;
+    direction: rtl;
 }
 .instagramLink{
     background-image: url('../public/InstagramGradient.jpeg');
