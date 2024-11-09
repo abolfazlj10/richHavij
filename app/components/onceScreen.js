@@ -6,23 +6,23 @@ export default function OnceScreen () {
                 <div className='max-[1330px]:hidden grid-rows-subgrid col-span-1 row-span-3'></div>
                 <div className='containerMainContent'>
                     <div className='titleHeading max-[1329px]:hidden'>
-                        <div className='text-highBlue'>مـــــــــــــــــوج</div>
-                        <div className='text-lowBlue'>آرمــــــــــــــــان‌</div>
+                        <div className='text-highBrown'>مـــــــــــــــــوج</div>
+                        <div className='text-lowBrown'>آرمــــــــــــــــان‌</div>
                     </div>
-                    <div className='titleHeading max-[899px]:hidden min-[1330px]:hidden'>
-                        <div className='text-highBlue'>مـــــــــــــوج</div>
-                        <div className='text-lowBlue'>آرمــــــــــــان‌</div>
+                    {/* <div className='titleHeading max-[899px]:hidden min-[1330px]:hidden'>
+                        <div className='text-highBrown'>مـــــــــــــوج</div>
+                        <div className='text-lowBrown'>آرمــــــــــــان‌</div>
                     </div>
                     <div className='titleHeading min-[900px]:hidden'>
-                        <div className='text-highBlue'>مــــــــــوج</div>
-                        <div className='text-lowBlue'>آرمـــــــــان‌</div>
-                    </div>
+                        <div className='text-highBrown'>مــــــــــوج</div>
+                        <div className='text-lowBrown'>آرمـــــــــان‌</div>
+                    </div>*/}
                     <div className='containerTwoIcon'>
-                        <img className="max-[1330px]:w-[150px]" src='./mowjicon.png'/>
-                        <img className="max-[1330px]:w-[150px]" src='./mowjicon.png'/>
-                    </div>
+                        <img className="max-[1330px]:w-[150px]" src='./havij.png'/>
+                        <img className="max-[1330px]:w-[150px]" src='./havij.png'/>
+                    </div> 
                     <div className='spaceImageMain'>
-                        <img className='Image' src='./mowj-bg.png'/>
+                        <img className='Image' src='./richhavich-bg.png'/>
                     </div>            
                 </div>
                 <div className='max-[1330px]:hidden grid-rows-subgrid col-span-1 row-span-3'></div>
@@ -32,12 +32,12 @@ export default function OnceScreen () {
             </div>
             <div className="containerMobileOnceScreen min-[750px]:hidden">
                 <div className="titleMobile">
-                    <img className="topIconMowjMobile" src="./mowjicon.png" />
-                    <div className="text-highBlue">مـــــوج</div>
-                    <div className="text-lowBlue">آرمـــان‌</div>
+                    <img className="topIconMowjMobile" src="./havij.png" />
+                    <div className="text-highBrown">مـــــوج</div>
+                    <div className="text-lowBrown">آرمـــان‌</div>
                 </div>
                 <div className='spaceImageMainMobile'>
-                    <img className='ImageMobile' src='./mowj-bg.png'/>
+                    <img className='ImageMobile' src='./richhavich-bg.png'/>
                 </div>     
             </div>
         </div>

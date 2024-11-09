@@ -7,12 +7,15 @@ export default function ThirdScreen () {
             </div>
             <div className='socialMediaLinks'>
             <div className='containerLinks'>
-                <div className='text-[#D44638] max-[552px]:-mt-52 -mt-10 -ml-10 blob'><a href='mailto:mowjarman@gmail.com'>جیمیل</a></div>
+                <div className='text-[#D44638] max-[552px]:-mt-52 -mt-10 -ml-10 blob'><a href='mailto:Amirarmaniya@gmail.com'>جیمیل</a></div>
+                <div className='blob max-[750px]:-mt-32 text-[#5DA5FF]'><a href='https://www.instagram.com/amir_armaniya'>بی هنس</a></div>
                 <div className='blob max-[750px]:-mt-32'><a className="instagramLink" href='https://www.instagram.com/mowjarman'>اینستاگرام</a></div>
+                <div className='blob max-[750px]:-mt-32 text-[#0A66C2]'><a href='https://www.linkedin.com/in/amir_armaniya'>لینکدین</a></div>
             </div>
             <div className='containerLinks'>
-                <div className='text-[#25D366] max-[552px]:-mt-20 -mt-9 -ml-10 blob'><a href='https://wa.me/+9058618858'>واتسپ</a></div>
-                <div className='text-[#0088CC] -mt-9 blob'><a href='https://t.me/MowjArman'>تلگرام</a></div>
+                <div className='text-[#0088CC] -mt-9 blob'><a href='https://t.me/amir_armaniya'>تلگرام</a></div>
+                <div className='blob max-[750px]:-mt-32 text-[#EA4C89]'><a href='https://www.instagram.com/mowjarman'>دریبل</a></div>
+                <div className='text-[#25D366] max-[552px]:-mt-20 -mt-9 -ml-10 blob'><a href='https://wa.me/+9373566967'>واتسپ</a></div>
             </div>
             </div>
             <div className='flex justify-center max-[750px]:hidden'><a href='https://mehdi-arman-s-project.vercel.app/'><img src='./desginer.svg'/></a></div>

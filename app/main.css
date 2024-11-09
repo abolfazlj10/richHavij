@@ -34,7 +34,7 @@ html,body{
     @apply max-[900px]:px-[50px];
 }
 .navbar{
-    @apply flex justify-between text-2xl text-[#04336C] bg-[#FFFFFF17] border border-[#0000000D] backdrop-blur w-full p-12 rounded-[100px];
+    @apply flex justify-between text-2xl text-[#ffffff] bg-[#FFFFFF17] border border-[#0000000D] backdrop-blur w-full p-12 rounded-[100px];
     @apply max-[900px]:text-xl max-[900px]:p-9;
 }
 .positionNavbarMobile{
@@ -42,7 +42,7 @@ html,body{
     @apply fixed z-50 bottom-7 w-full flex justify-center items-center font-hasti px-[10px];
 }
 .navbarMobile{
-    @apply w-full flex items-center justify-between text-2xl text-[#04336C] bg-[#0000001C] border border-[#0000000D] backdrop-blur px-5 py-3 rounded-[100px];
+    @apply w-full flex items-center justify-between text-2xl text-[#ffffff] bg-[#0000001C] border border-[#0000000D] backdrop-blur px-5 py-3 rounded-[100px];
 }
 .navFingerprint{
     @apply absolute top-0 w-full flex items-start justify-center;
@@ -56,10 +56,10 @@ html,body{
     @apply duration-75;
 }
 .activeLink{
-    @apply text-highBlue;
+    @apply text-highBrown;
 }
 .oneScreen{
-    background-image: url('../public/bg-freez.png') , linear-gradient(#62CFF4,#58A2FF);
+    background-image: url('../public/bg-freez.png') , linear-gradient(#FF6200,#FD7F2C);
     @apply relative flex flex-col h-screen snap-start;
     direction: rtl;
 }
@@ -81,7 +81,7 @@ html,body{
     @apply absolute h-full w-full flex justify-center items-center;
 }
 .Image{
-    @apply backdrop-blur border bg-black/10 border-[#ababab78] rounded-[100px] h-[550px] w-[430px] object-cover;
+    @apply backdrop-blur border bg-black/10 border-[#ababab78] rounded-[70px] h-[550px] w-[430px] object-cover;
     @apply max-[900px]:w-[400px];
 }
 .arrowDown{
@@ -91,7 +91,7 @@ html,body{
     @apply w-10;
 }
 .twoScreen{
-    background-image: url('../public/bg-freez.png') , linear-gradient(#58A2FF,#2FB8DA);
+    background-image: url('../public/bg-freez.png') , linear-gradient(#FF8C49,#FE6F17);
     @apply overflow-hidden grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] h-screen snap-start;
     direction: rtl;
     @apply max-[750px]:gap-0 max-[750px]:block;
@@ -106,18 +106,18 @@ html,body{
     @apply h-[280px] opacity-75 max-[600px]:h-[200px] max-[404px]:h-[190px] max-[380px]:h-[180px];
 }
 .nameAbout{
-    @apply font-hasti text-[128px] text-highBlue -mr-14;
+    @apply font-hasti text-[128px] text-highBrown -mr-14;
     @apply max-[750px]:text-[90px] max-[600px]:text-[80px] max-[500px]:text-[70px] max-[448px]:text-[60px] max-[404px]:text-[55px] max-[380px]:text-[50px];
 }
 .aboutText{
-    @apply h-fit prCommonTwoScreen font-vazir text-[#04336C] text-[28px] border border-white/10 bg-[#0000001C] rounded-[40px] py-2 px-5 backdrop-blur;
+    @apply h-fit prCommonTwoScreen font-vazir text-[#060606] text-[28px] border border-white/10 bg-[#0000001C] rounded-[40px] py-2 px-5 backdrop-blur;
     @apply max-[750px]:mx-3;
 }
 .thingFrench{
     @apply font-hasti text-[#2C67F2];
 }
 .thirdScreen{
-    background-image: url('../public/bg-freez.png') , linear-gradient(#2FB8DA,#1479F7);
+    background-image: url('../public/bg-freez.png') , linear-gradient(#FF6200,#FD7F2C);
     @apply relative flex flex-col h-screen pt-[120px] px-[150px] snap-start;
     direction: rtl;
 }
@@ -132,7 +132,7 @@ html,body{
     @apply w-[200px] h-[200px];
 }
 .connectMe{
-    @apply text-highBlue font-hasti text-[120px] mt-24 -mr-16;
+    @apply text-highBrown font-hasti text-[120px] mt-24 -mr-16;
 }
 .socialMediaLinks{
     @apply flex flex-col flex-1 font-hasti items-center justify-center text-[50px];

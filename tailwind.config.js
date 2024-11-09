@@ -10,8 +10,8 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        'lowBlue': '#0088CC',
-        'highBlue': '#0A66C2'
+        'lowBrown': '#6D2805',
+        'highBrown': '#711906'
       },
       fontFamily:{
         'hasti' : 'hasti',
