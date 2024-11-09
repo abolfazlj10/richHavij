@@ -196,7 +196,7 @@ html,body{
         @apply py-1;
     }
     .topIconMowjMobile{
-        @apply w-20 mt-1;
+        @apply w-20 pb-[10px] mt-0;
     }
 }
 @media (max-width:750px) and (max-height:869px) {
@@ -237,7 +237,7 @@ html,body{
         @apply w-10;
     }
 }
-@media (max-width:750px) and (max-height:789px) {
+@media (max-width:750px) and (max-height:765px) {
     .ImageMobile{
         @apply h-[390px];
     }
@@ -434,7 +434,11 @@ html,body{
 }
 @media (max-width:500px) and (max-height:879px) {
     .fingerprint{
-        @apply h-[150px];
+        @apply h-[140px];
+    }
+    .aboutText{
+        @apply text-[21px];
+        line-height: 39px;
     }
 }
 @media (max-width:500px) and (max-height:815px) {
