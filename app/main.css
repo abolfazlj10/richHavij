@@ -161,13 +161,13 @@ html,body{
 .containerMobileOnceScreen{
     @apply h-full grid grid-rows-[1fr_3fr_24vw_15vw];
 }
-.topIconMowjMobile{
+.topIconRichMobile{
     @apply w-24 mx-auto mt-5 -mb-10 max-[390px]:-mb-5 max-[390px]:mt-1;
 }
 .ImageMobile{
     @apply w-[450px] h-full object-cover rounded-[100px] border border-[#711906] max-[465px]:w-[350px] max-[390px]:w-[320px];
 }
-.signMowj{
+.signRich{
     @apply max-[750px]:mr-auto max-[750px]:ml-9 max-[750px]:-mt-10 z-10 max-[750px]:relative max-[600px]:-mt-14 max-[750px]:w-[80px] max-[460px]:-mt-20;
 }
 .blob{
@@ -185,7 +185,7 @@ html,body{
     .navbarMobile{
         @apply py-1;
     }
-    .topIconMowjMobile{
+    .topIconRichMobile{
         @apply w-20 pb-[10px] mt-0;
     }
 }
@@ -251,7 +251,7 @@ html,body{
         @apply text-[25px];
         line-height: 50px;
     }
-    .signMowj{
+    .signRich{
         @apply -mt-20;
     }
 }
@@ -260,7 +260,7 @@ html,body{
         @apply text-[22px];
         line-height: 45px;
     }
-    .signMowj{
+    .signRich{
         @apply -mt-14;
     }
 }
@@ -312,7 +312,7 @@ html,body{
     .nameAbout{
         @apply text-[80px]
     }
-    .signMowj{
+    .signRich{
         @apply w-[150px];
     }
 }
@@ -386,7 +386,7 @@ html,body{
     .aboutText{
         line-height: 40px;
     }
-    .signMowj{
+    .signRich{
         @apply -mt-10;
     }
 }
@@ -403,7 +403,7 @@ html,body{
     .aboutText{
         @apply text-[20px];
     }
-    .signMowj{
+    .signRich{
         @apply -mt-16
     }
     .blob{

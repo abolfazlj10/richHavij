@@ -31,7 +31,7 @@ export default function OnceScreen () {
             </div>
             <div className="containerMobileOnceScreen min-[750px]:hidden">
                 <div className="titleMobile">
-                    <img className="topIconMowjMobile" src="./havij.png" />
+                    <img className="topIconRichMobile" src="./havij.png" />
                     <div className="text-highBrown">امیرحسین</div>
                     <div className="text-lowBrown">آرمان‌نیا</div>
                 </div>
