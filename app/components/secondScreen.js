@@ -4,7 +4,7 @@ export default function SecondScreen () {
             <div className='max-[750px]:hidden grid-cols-subgrid col-span-2'></div>
             <div className='aboutTitle'>
                 <img className='fingerprint' src='./fingerprintsecond.svg' />
-                <div className='nameAbout'>موج‌آرمان؟!</div>
+                <div className='nameAbout'>امیرحسین آرمان‌نیا؟!</div>
             </div>
             <div className='max-[750px]:hidden grid-cols-subgrid col-span-1'></div>
             <div className='aboutText'>
