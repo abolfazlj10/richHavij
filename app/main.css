@@ -18,12 +18,15 @@
 html,body{
     overflow: hidden;
     height: 100vh;
+    height: 100dvh;
     direction: ltr;
 }
 .parent{
     overflow-y: scroll;
     height: 100vh;
+    height: 100dvh;
     scroll-snap-points-y: repeat(100vh);
+    scroll-snap-points-y: repeat(100dvh);
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
@@ -59,7 +62,7 @@ html,body{
 }
 .oneScreen{
     background-image: url('../public/bg-freez.png') , linear-gradient(#FF6200,#FD7F2C);
-    @apply relative flex flex-col h-screen snap-start;
+    @apply relative flex flex-col h-screen h-[100dvh] snap-start;
     direction: rtl;
 }
 .gridSystemOneScreen{
@@ -95,7 +98,7 @@ html,body{
 }
 .twoScreen{
     background-image: url('../public/bg-freez.png') , linear-gradient(#FF8C49,#FE6F17);
-    @apply overflow-hidden grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] h-screen snap-start;
+    @apply overflow-hidden grid relative gap-x-5 grid-cols-[4fr_1fr] grid-rows-[100px_1fr_1fr_50px] h-screen h-[100dvh] snap-start;
     direction: rtl;
     @apply max-[750px]:gap-0 max-[750px]:block;
 }
@@ -121,7 +124,7 @@ html,body{
 }
 .thirdScreen{
     background-image: url('../public/bg-freez.png') , linear-gradient(#FF6200,#FD7F2C);
-    @apply relative flex flex-col h-screen pt-[120px] px-[150px] snap-start;
+    @apply relative flex flex-col h-screen h-[100dvh] pt-[120px] px-[150px] snap-start;
     direction: rtl;
 }
 .instagramLink{
