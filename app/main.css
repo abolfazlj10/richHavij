@@ -350,10 +350,21 @@ html,body{
     .fingerprint{
         @apply h-[200px];
     }
+    .blob{
+        @apply px-8 py-7;
+    }
+    .socialMediaLinks{
+        @apply text-[30px]
+    }
 }
 @media (max-width:750px) and (min-width:500px) and (max-height:771px) {
     .aboutText{
         @apply text-[22px];
+    }
+}
+@media (max-width:750px) and (min-width:500px) and (max-height:727px) {
+    .socialMediaLinks{
+        @apply text-[25px];
     }
 }
 @media (max-width:750px) and (min-width:500px) and (max-height:683px) {
@@ -396,11 +407,19 @@ html,body{
     .signMowj{
         @apply -mt-16
     }
+    .blob{
+        @apply px-8 py-7;
+    }
 }
 @media (max-width:500px) and (max-height:729px) {
     .aboutText{
         line-height: 31px;
     }
+    .thirdScreen{
+        @apply p-0;
+    }
+}
+@media (max-width:500px) and (max-height:683px) {
 }
 @media (max-width:500px) and (max-height:631px) {
     .fingerprint{
@@ -409,6 +428,9 @@ html,body{
     .nameAbout{
         @apply text-[70px]
     }
+}
+@media (max-width:500px) and (max-height:631px) {
+
 }
 /* third screen */
 @media (max-width:1276px) {
@@ -432,10 +454,7 @@ html,body{
         @apply px-3 py-10;
     }
     .connectMe{
-        @apply text-[70px] -mr-24;
-    }
-    .blob{
-        @apply px-10
+        @apply text-[70px] mt-9 -mr-20;
     }
 }
 @media (max-width:412px) {
@@ -443,12 +462,6 @@ html,body{
         @apply text-[15vw] mt-28 -mr-24;
     }
     .socialMediaLinks{
-        @apply justify-end pb-[100px];
+        @apply pb-[100px];
     }
-}
-@media (max-height:705px) {
-    .socialMediaLinks{
-        @apply justify-end pb-[50px];
-    }
-    
 }
