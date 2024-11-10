@@ -71,17 +71,21 @@ html,body{
     @apply max-[1330px]:col-span-7 max-[1330px]:mx-[70px] max-[900px]:mx-[40px];
 }
 .titleHeading{
-    @apply flex-1 mb-20 flex flex-col justify-end font-hasti text-[130px] mx-auto;
-    line-height: 130px;
+    @apply max-w-[1460px] flex-1 flex justify-evenly items-center font-hasti text-[100px];
+    @apply min-[2020px]:mx-auto min-[2020px]:gap-52 max-[820px]:text-[80px];
+}
+.subTitle{
+    @apply text-[40px] px-28 max-[820px]:text-[30px] max-[820px]:px-20;
 }
 .containerTwoIcon{
     @apply flex justify-between;
+    @apply min-[2020px]:justify-around;
 }
 .spaceImageMain{
     @apply absolute h-full w-full flex justify-center items-center;
 }
 .Image{
-    @apply backdrop-blur border bg-black/10 border-[#ababab78] rounded-[70px] h-[550px] w-[430px] object-cover;
+    @apply backdrop-blur-sm border bg-black/10 border-[#ababab78] rounded-[70px] h-[550px] w-[430px] object-cover;
     @apply max-[900px]:w-[400px];
 }
 .arrowDown{
@@ -135,50 +139,40 @@ html,body{
     @apply text-highBrown font-hasti text-[120px] mt-24 -mr-16;
 }
 .socialMediaLinks{
-    @apply flex flex-col flex-1 font-hasti items-center justify-center text-[50px];
+    @apply flex flex-col flex-1 font-hasti items-center justify-center text-[4vw];
+    @apply max-[750px]:flex-row max-[750px]:text-[35px] max-[408px]:text-[8vw];
 }
 .containerLinks{
     @apply flex justify-center items-center;
+    @apply max-[750px]:flex-col;
 }
 .maxWidth{
     @apply max-w-[1500px];
 }
 .titleMobile{
-    @apply text-center font-hasti text-[140px] max-[465px]:text-[120px] max-[390px]:text-[100px];
-    line-height: 150px;
+    @apply text-center font-hasti text-[15vw];
+    line-height: 22vw;
 }
 .spaceImageMainMobile{
     @apply h-full w-full flex justify-center items-center;
 }
 .containerMobileOnceScreen{
-    @apply h-full grid grid-rows-[2fr_4fr_150px];
+    @apply h-full grid grid-rows-[1fr_3fr_24vw_15vw];
 }
 .topIconMowjMobile{
     @apply w-24 mx-auto mt-5 -mb-10 max-[390px]:-mb-5 max-[390px]:mt-1;
 }
 .ImageMobile{
-    @apply w-[450px] h-[530px] object-cover rounded-[100px] border border-[#0A66C2] max-[465px]:w-[350px] max-[390px]:w-[320px];
+    @apply w-[450px] h-full object-cover rounded-[100px] border border-[#711906] max-[465px]:w-[350px] max-[390px]:w-[320px];
 }
 .signMowj{
     @apply max-[750px]:mr-auto max-[750px]:ml-9 max-[750px]:-mt-10 z-10 max-[750px]:relative max-[600px]:-mt-14 max-[750px]:w-[80px] max-[460px]:-mt-20;
 }
 .blob{
-    @apply bg-[#0000001C] p-14 rounded-full border border-white/10 backdrop-blur ;
+    @apply bg-[#0000001C] p-10 rounded-full border border-white/10 backdrop-blur;
 }
-@media (max-width:465px) {
-    .titleMobile{
-        line-height: 130px;
-    }
-}
-@media (max-width:390px) {
-    .titleMobile{
-        line-height: 110px;
-    }
-}
-@media (max-width:750px) and (max-height:993px) {
-    .ImageMobile{
-        @apply h-[500px];
-    }
+.subtextMobile{
+    @apply text-[8vw] flex font-hasti justify-center;
 }
 @media (max-width:1025px) {
     .positionNavbarMobile{
@@ -189,9 +183,6 @@ html,body{
     .containerMobileOnceScreen{
         @apply grid-rows-[2fr_4fr_100px];
     }
-    .ImageMobile{
-        @apply h-[440px];
-    }
     .navbarMobile{
         @apply py-1;
     }
@@ -199,47 +190,12 @@ html,body{
         @apply w-20 pb-[10px] mt-0;
     }
 }
-@media (max-width:750px) and (max-height:869px) {
-    .titleMobile{
-        @apply text-[100px];
-        line-height: 110px;
-    }
-    .ImageMobile{
-        @apply h-[460px];
-    }
-}
-@media (max-width:750px) and (max-height:833px) {
-    .ImageMobile{
-        @apply h-[440px];
-    }
-}
-@media (max-width:750px) and (max-height:813px) {
-    .titleMobile{
-        line-height: 105px;
-    }
-    .ImageMobile{
-        @apply h-[430px];
-    }
-
-}
 @media (max-width:750px) and (max-height:789px) {
-    .titleMobile{
-        @apply text-[90px];
-        line-height: 90px;
-    }
-    .ImageMobile{
-        @apply h-[410px];
-    }
     .navbarMobile{
         @apply text-xl;
     }
     .navFileFingerprint{
         @apply w-10;
-    }
-}
-@media (max-width:750px) and (max-height:765px) {
-    .ImageMobile{
-        @apply h-[390px];
     }
 }
 @media (min-width:750px) {
@@ -250,9 +206,6 @@ html,body{
 @media (min-width:750px) and (max-height:833px) {
     .gridSystemOneScreen{
         @apply grid-rows-[150px_1fr_1fr_1fr];
-    }
-    .titleHeading{
-        @apply mb-0;
     }
     .navbar{
         @apply p-10;
@@ -266,11 +219,6 @@ html,body{
 @media (min-width:750px) and (max-height:735px) {
     .Image{
         @apply h-[510px];
-    }
-}
-@media (min-width:750px) and (min-height:1041px) {
-    .titleHeading{
-        @apply mt-[300px] justify-center;
     }
 }
 /* secondDcreen */
@@ -489,16 +437,13 @@ html,body{
     .blob{
         @apply px-10
     }
-    .socialMediaLinks{
-        @apply text-[40px];
-    }
 }
 @media (max-width:412px) {
     .connectMe{
-        @apply text-[60px] mt-28 -mr-24;
+        @apply text-[15vw] mt-28 -mr-24;
     }
     .socialMediaLinks{
-        @apply text-[30px] justify-end pb-[100px];
+        @apply justify-end pb-[100px];
     }
 }
 @media (max-height:705px) {
