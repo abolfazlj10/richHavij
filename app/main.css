@@ -117,7 +117,7 @@ html,body{
 }
 .aboutText{
     @apply h-fit prCommonTwoScreen font-vazir text-[#060606] text-[28px] border border-white/10 bg-[#0000001C] rounded-[40px] py-2 px-5 backdrop-blur;
-    @apply max-[750px]:mx-3;
+    @apply max-[750px]:mx-3 max-[750px]:text-[4vw] max-[600px]:text-[5vw] max-[500px]:text-[6vw] max-[360px]:text-[7vw];
 }
 .thingFrench{
     @apply font-hasti text-[#2C67F2];
@@ -159,13 +159,13 @@ html,body{
     @apply h-full w-full flex justify-center items-center;
 }
 .containerMobileOnceScreen{
-    @apply h-full grid grid-rows-[1fr_3fr_24vw_15vw];
+    @apply h-full grid grid-rows-[1fr_3fr_20vw_15vw];
 }
 .topIconRichMobile{
     @apply w-24 mx-auto mt-5 -mb-10 max-[390px]:-mb-5 max-[390px]:mt-1;
 }
 .ImageMobile{
-    @apply w-[450px] h-full object-cover rounded-[100px] border border-[#711906] max-[465px]:w-[350px] max-[390px]:w-[320px];
+    @apply w-[450px] h-full object-cover rounded-[100px] border border-[#711906] max-[750px]:w-[350px] max-[390px]:w-[320px];
 }
 .signRich{
     @apply max-[750px]:mr-auto max-[750px]:ml-9 max-[750px]:-mt-10 z-10 max-[750px]:relative max-[600px]:-mt-14 max-[750px]:w-[80px] max-[460px]:-mt-20;
@@ -174,7 +174,7 @@ html,body{
     @apply bg-[#0000001C] p-10 rounded-full border border-white/10 backdrop-blur;
 }
 .subtextMobile{
-    @apply text-[8vw] flex font-hasti justify-center;
+    @apply text-[8vw] flex font-hasti justify-center items-center max-[520px]:items-start;
 }
 @media (max-width:1025px) {
     .positionNavbarMobile{
@@ -247,24 +247,24 @@ html,body{
 }
 /* width mobile start */
 @media (max-width:500px){
-    .aboutText{
+    /* .aboutText{
         @apply text-[25px];
         line-height: 50px;
-    }
+    } */
     .signRich{
         @apply -mt-20;
     }
 }
 @media (max-width:480px){
-    .aboutText{
+    /* .aboutText{
         @apply text-[22px];
         line-height: 45px;
-    }
+    } */
     .signRich{
         @apply -mt-14;
     }
 }
-@media (max-width:404px){
+/* @media (max-width:404px){
     .aboutText{
         @apply text-[21px];
         line-height: 43px;
@@ -281,7 +281,7 @@ html,body{
         @apply text-[20px];
         line-height: 39px;
     }
-}
+} */
 /* second section width mobile end */
 /* second section height desktop */
 @media (min-width:750px) and (max-height:953px){
@@ -340,12 +340,23 @@ html,body{
     }
 }
 /* second screen height mobile from 750 until 500 */
-@media (max-width:750px) and (min-width:500px) and (max-height:975px) {
+@media (max-width:750px) and (min-width:500px) and (max-height:981px) {
+    .fingerprint{
+        @apply h-[200px];
+    }
+    .nameAbout{
+        @apply text-[80px]
+    }
+}
+@media (max-width:750px) and (min-width:500px) and (max-height:915px) {
     .aboutText{
-        @apply text-[24px];
+        @apply text-[3.5vw];
     }
 }
 @media (max-width:750px) and (min-width:500px) and (max-height:867px) {
+    .aboutText{
+        @apply text-[3.3vw];
+    }
     .fingerprint{
         @apply h-[200px];
     }
@@ -358,7 +369,7 @@ html,body{
 }
 @media (max-width:750px) and (min-width:500px) and (max-height:771px) {
     .aboutText{
-        @apply text-[22px];
+        @apply text-[3vw];
     }
 }
 @media (max-width:750px) and (min-width:500px) and (max-height:727px) {
@@ -373,19 +384,19 @@ html,body{
     .fingerprint{
         @apply h-[180px]
     }
+}
+/* second screen height mobile from 750 until 500 */
+@media (max-width:500px) and (max-height:1041px) {
     .aboutText{
-        @apply text-[20px]
+        @apply text-[5.5vw]
     }
 }
-@media (max-width:500px) and (max-height:1035px) {
+@media (max-width:500px) and (max-height:965px) {
     .aboutText{
-        @apply text-[22px]
+        @apply text-[5vw]
     }
 }
 @media (max-width:500px) and (max-height:945px) {
-    .aboutText{
-        line-height: 40px;
-    }
     .signRich{
         @apply -mt-10;
     }
@@ -394,15 +405,13 @@ html,body{
     .fingerprint{
         @apply h-[140px];
     }
+}
+@media (max-width:500px) and (max-height:861px) {
     .aboutText{
-        @apply text-[21px];
-        line-height: 39px;
+        @apply text-[4.1vw]
     }
 }
 @media (max-width:500px) and (max-height:815px) {
-    .aboutText{
-        @apply text-[20px];
-    }
     .signRich{
         @apply -mt-16
     }
@@ -411,11 +420,11 @@ html,body{
     }
 }
 @media (max-width:500px) and (max-height:729px) {
-    .aboutText{
-        line-height: 31px;
-    }
     .thirdScreen{
         @apply p-0;
+    }
+    .aboutText{
+        @apply text-[3.5vw];
     }
 }
 @media (max-width:500px) and (max-height:683px) {
